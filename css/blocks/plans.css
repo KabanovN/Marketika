@@ -1,0 +1,87 @@
+.plans {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.plans__inner {
+  color: #6c6c6c;
+  text-align: center; }
+
+.plans__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 17px;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 51px;
+  color: #414141; }
+
+.plans__text {
+  padding: 0;
+  margin: 0 auto 20px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px; }
+
+.plans__columns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.plans__wrapper {
+  flex-basis: 50%;
+  max-width: 371px;
+  padding: 40px 20px; }
+  .plans__wrapper--active {
+    background-color: #f6fafd; }
+
+.plans__column-title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 17px;
+  color: #414141;
+  text-transform: uppercase; }
+
+.plans__column-price {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 17px;
+  color: #414141; }
+
+.plans__price {
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 86px;
+  color: #fe4fa7; }
+
+.plans__column-description {
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px; }
+
+.plans__column-button {
+  display: inline-block;
+  width: 192px;
+  padding-right: 50px;
+  padding-left: 50px;
+  border: 1px solid #979797; }
+
+@media (min-width: 768px) {
+  .plans {
+    padding-top: 40px;
+    padding-bottom: 40px; } }
+
+@media (min-width: 1200px) {
+  .plans {
+    padding-top: 117px;
+    padding-bottom: 150px; }
+  .plans__text {
+    margin: 0 auto 95px; }
+  .plans__columns {
+    flex-direction: row; }
+  .plans__wrapper {
+    padding: 60px 45px; } }

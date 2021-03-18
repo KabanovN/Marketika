@@ -1,0 +1,83 @@
+@import './normalize.scss';
+@import './mixins.scss';
+@import './blocks/header.scss';
+@import './blocks/advantages.scss';
+@import './blocks/founder.scss';
+@import './blocks/plans.scss';
+@import './blocks/promo.scss';
+@import './blocks/footer.scss';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', 'Arial', sans-serif;
+    background-color: #f2f2f2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1170px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+}
+
+.button {
+    width: 100%;
+    max-width: 192px;
+    padding: 16px 50px;
+    font-size: 16px;
+    color: #414141;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 4px;
+    outline: none;
+
+    &:hover,
+    &:focus {
+        color: #fff;
+        background-color: #2182dd;
+    }
+
+    &--active {
+        color: #fff;
+        background: linear-gradient(to right, #fe985b, #fe4fa7);
+        border: none;
+
+        &:hover,
+        &:focus {
+            color: #fff;
+            background: linear-gradient(to right, #fe4fa7, #fe985b);
+            border: none;
+        }
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .container {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .button {
+        width: 192px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
